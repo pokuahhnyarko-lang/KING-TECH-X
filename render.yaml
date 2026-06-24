@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: king tech x bot
+    env: docker
+    repo: https://github.com/Pokuahhnyarko-lang/KING-TECH-X
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SESSION_ID
+        sync: false
+      - key: OWNER_NUMBER
+        sync: false
